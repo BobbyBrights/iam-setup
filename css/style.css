@@ -1,0 +1,61 @@
+* { margin: 0; padding: 0; }
+html { height: 100%; }
+body { height: 100%; background: black; font-family: "Flama-Light"; font-weight: 300; font-size: 16px; color: white; letter-spacing: 0.5px; line-height: 1.4; background: url('../images/will_i_am_awesome_shot-01_0279_b.png') no-repeat right bottom; background-size: cover; }
+body.fitness {background-image: url('../images/fitness_bg.jpg'); }
+body.music {background-image: url('../images/music_bg.jpg'); }
+
+a { color: #ffc100; text-decoration: none; }
+button { background-color: transparent; border: none; outline: none; cursor: pointer; }
+
+.center { text-align: center; }
+.ver-middle { position: relative; top: 50%; transform: translateY(-50%); }
+.middleOfPage { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+
+padded-button.home { position: absolute; left: 0; top: 0; }
+button.settings { position: absolute; right: 30px; top: 30px; }
+
+.padded-button,
+.details { width: 231px; height: 231px; position: relative; padding: 20px; box-sizing: border-box; display: block; }
+.padded-button.small,
+.details.small { width: 154px; height: 154px; }
+
+.padded-button { background-color: #ffc100; background-color: rgba(255,193,0,.8); }
+
+.details { background-color: #1b1b1b; background-color: rgba(27,27,27,.8); color: white; }
+.details .title { font-size: 24px; }
+body.music .details .title { font-size: initial; }
+
+.padded-button img,
+.details img { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); }
+
+.padded-button.green { background-color: #ceda1d; }
+.padded-button.red { background-color: #df2425; }
+
+
+
+.flex-container { width: 462px;  display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; align-content: flex-start; align-items: flex-start;  }
+.flex-items-default { flex-grow: 0; flex-shrink: 0; flex-basis: 0; }
+
+body.music .flex-container { width: 770px;  }
+
+
+.flip-container { -webkit-perspective: 1000; -moz-perspective: 1000; -o-perspective: 1000; perspective: 1000; }
+.flip-container:hover .flipper,
+.flip-container.hover .flipper { -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); -o-transform: rotateY(180deg); transform: rotateY(180deg); }
+.flip-container, .front, .back { width: 231px; height: 231px; }
+.flip-container.small, .flip-container.small .front, .flip-container.small .back { width: 154px; height: 154px; }
+.flipper { -webkit-transition: 0.6s; -webkit-transform-style: preserve-3d; -moz-transition: 0.6s; -moz-transform-style: preserve-3d; -o-transition: 0.6s; -o-transform-style: preserve-3d; transition: 0.6s; transform-style: preserve-3d; position: relative; }
+.front, .back { -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -o-backface-visibility: hidden; backface-visibility: hidden; position: absolute; top: 0; left: 0; }
+.front { z-index: 2; }
+.back { -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); -o-transform: rotateY(180deg); transform: rotateY(180deg); }
+
+.settings { transition: 0.2s linear; }
+.settings:hover { transform: rotate(180deg); }
+
+.desc { transform: translate(200px,-50%); position: absolute; top: 50%; left: 0; text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);}
+.desc > div:first-child { font-size: 36px; }
+.desc > div:last-child { font-size: 24px; }
+
+.gold { color: #ffc100; }
+.green { color: #ceda1d; }
+.red { color: #df2425; }
